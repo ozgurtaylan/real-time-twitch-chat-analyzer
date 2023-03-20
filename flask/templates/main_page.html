@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitch Analyzer</title>
+    <style>
+      /* Set background color and text color */
+      body {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+      }
+      
+      /* Center the input box and button */
+      #input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      /* Style the input box */
+      .input-box {
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 24px;
+        margin-bottom: 20px;
+        width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        outline: none;
+        background-color: #ecf0f1;
+        color: #2c3e50;
+      }
+
+      /* Style the label */
+      .input-label {
+        font-size: 24px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      /* Style the button */
+      #analyze-button {
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 24px;
+        width: 200px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        background-color: #27ae60;
+        color: #ecf0f1;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+      
+      #my-paragraph {
+        font-size: 38px;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        
+      }
+
+      /* Add hover effect to the button */
+      #analyze-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+      <p id="my-paragraph">Twitch Chat Analyzer</p>
+      <form id="input-container" method="post">
+        <label for="username" class="input-label">Streamer</label>
+        <input type="text" id="username" class="input-box" placeholder="Enter the username" name="username">
+        <input type="submit" id="analyze-button" value="Listen"></input>
+      </form>
+  </body>
+</html>

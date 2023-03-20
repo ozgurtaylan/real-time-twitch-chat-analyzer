@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Control Page</title>
+    <style>
+      body {
+        background-color: #222;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+      }
+      .container {
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .loader {
+        display: inline-block;
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+      }
+      .word {
+        font-size: 5vw;
+        letter-spacing: 0.3em;
+        text-shadow: 3px 3px 0 #444;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      #analyze-button {
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 24px;
+        width: 200px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        background-color: #27ae60;
+        color: #ecf0f1;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease;
+        margin: 0 20px;
+      }
+
+      #analyze-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Center the buttons */
+      #button-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loader"></div>
+      <p class="word">Listening "{{username}}"</p>
+    </div>
+    <form id="button-container" method="POST">
+      <input id="analyze-button" value="End session" type="submit" name="end_session"></input>
+      <input id="analyze-button" value="Go Dashboard" type="submit" name="go_dashboard" onclick= "window.open('http://localhost:5601', '_blank')"></input>
+      
+    </form>
+  </body>
+</html>
