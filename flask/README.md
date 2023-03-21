@@ -45,4 +45,4 @@ To ensure that the Kafka producer does not block the main Flask thread, a separa
 
 ## Screenshots
 
-<p align="center"><img src="docs/flask.png" alt="workflow" width="800"/></p>
+<p align="center"><img src="../docs/flask.png" alt="workflow" width="800"/></p>

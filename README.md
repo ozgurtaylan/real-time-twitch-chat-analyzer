@@ -23,7 +23,7 @@ The tool should enable moderators and streamers to easily keep track of the inte
 
 ## Project structure
 
-<p align="center"><img src="docs/diagram.png" alt="workflow" width="800"/></p>
+<p align="center"><img src="docs/diagram-v2.png" alt="workflow" width="800"/></p>
 
 The project workflow follows the structure above.
 

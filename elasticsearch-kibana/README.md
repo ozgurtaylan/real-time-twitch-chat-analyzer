@@ -1,7 +1,7 @@
 
 # Elasticsearch & Kibana
 
-<p align="center"><img src="docs/elastic-kibana.png" alt="workflow" width="800"/></p>
+<p align="center"><img src="../docs/elastic-kibana.png" alt="workflow" width="800"/></p>
 
 Screenshot from compose file about the related part.
 
